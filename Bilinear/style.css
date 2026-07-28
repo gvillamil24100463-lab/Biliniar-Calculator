@@ -1,0 +1,268 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    color:#333;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:#fff;
+    text-align:center;
+    padding:30px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+header p{
+    font-size:16px;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:100%;
+    margin:30px auto;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+    background:#fff;
+    width:40%;
+    margin:20px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* Formula */
+.card:nth-of-type(4){
+    width:65%;
+}
+
+/* Graph */
+.card:nth-of-type(5){
+    width:75%;
+}
+
+/* Result */
+.card:nth-of-type(6){
+    width:55%;
+}
+
+/* Steps */
+.card:nth-of-type(7){
+    width:75%;
+}
+
+.card h2{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-box label{
+    margin-bottom:5px;
+    font-weight:600;
+    font-size:14px;
+}
+
+.input-box input{
+    padding:8px 10px;
+    font-size:14px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+.input-box input:focus{
+    border-color:#1565c0;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+    padding:10px 18px;
+    font-size:14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+    transition:.3s;
+}
+
+#calculateBtn{
+    background:#1565c0;
+    color:white;
+    margin-right:10px;
+}
+
+#calculateBtn:hover{
+    background:#0d47a1;
+}
+
+#clearBtn{
+    background:#d32f2f;
+    color:white;
+}
+
+#clearBtn:hover{
+    background:#b71c1c;
+}
+
+/* ===========================
+   FORMULA
+=========================== */
+
+.formula{
+    background:#f5f8fc;
+    border-left:5px solid #1565c0;
+    border-radius:10px;
+    padding:18px;
+    text-align:center;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* ===========================
+   RESULT
+=========================== */
+
+#result{
+    background:#e3f2fd;
+    border-left:5px solid #1565c0;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* ===========================
+   STEPS
+=========================== */
+
+#steps{
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    line-height:1.7;
+    white-space:pre-line;
+    font-size:15px;
+}
+
+/* ===========================
+   CANVAS
+=========================== */
+
+#graphCanvas{
+    display:block;
+    margin:auto;
+    width:100%;
+    max-width:650px;
+    border:2px solid #1565c0;
+    border-radius:10px;
+    background:#fff;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:30px;
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+    .card,
+    .card:nth-of-type(4),
+    .card:nth-of-type(5),
+    .card:nth-of-type(6),
+    .card:nth-of-type(7){
+        width:90%;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    button{
+        width:100%;
+        margin:10px 0;
+    }
+
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .card h2{
+        font-size:20px;
+    }
+
+}
